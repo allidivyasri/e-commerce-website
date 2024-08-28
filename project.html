@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: pink;
+            color: blue;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color:pink;
+            color:blue;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .product-details img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-info {
+            margin-top: 20px;
+        }
+        .product-info button {
+            padding: 10px 20px;
+            background-color:pink;
+            border: none;
+            color:blue;
+            cursor: pointer;
+        }
+        .product-info button:hover {
+            background-color:blue;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .product-catalog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>footwear catelog</h1>
+        <nav>
+            <a href="#product">Product</a> |
+            <a href="#about">About Us</a> |
+            <a href="#contact">Contact</a> |
+            <a href="#register">Register/Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Product Page Section -->
+        <section id="product" class="product-details">
+            <h2>Product Page</h2>
+          <u><p>here you can find our products listed with details</p>
+         <h1>"Bata company"</h1>
+        <img src=https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dw9bf05c6e/images/large/5715901_1.jpeg?sw=1634">
+         <p>it is a high quality product</p>
+          <p>price:500</p>
+          <a href="bata.html"</a>
+          <h1>"adidas"</h1>
+          <img src=https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/15f901c90a9549d29104aae700d27efb_9366/Superstar_Shoes_Black_EG4959_01_standard.jpg>
+          <p>it is light weight to wear this slippers</p>
+          <p>price:1000</p>
+            <a href="adidas.html"</a>       
+            <div class="product-info">
+                <h1>nike</h3>
+           <img src=https://static.nike.com/a/images/t_default/abca8659-8a71-4840-9c96-91098bbd30df/W+NIKE+VICTORI+ONE+SLIDE.png>
+                <p>it is very flexible to wear</p>
+                <p><strong>Price:</strong>10000</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- About Us Page Section -->
+        <section id="about" class="about-us">
+            <h1>About Us</h1>
+            <p>the parts of this slippers are light footwear that are designed to be worn for indoor and outdoor</p>
+            <u>
+           <u>respect</u>
+           <p><u>our culture</u></p>
+            over the years we have a this company,engaing and friendly with customers</p>
+           <p>we are a company decided to providing a good quality products to the customers</p>
+          </section>
+
+        <!-- Contact Page Section -->
+        <section id="contact" class="contact-form">
+            <h1>Contact Us</h1>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+           <p>if you have any questions,feel free to ask with via of our company contact form above our email or phone number below</p>
+        <p>allidivyasri123@gmail.com,9676194998</p>
+        Address:Warangal,Telangana,india.
+        thank you</p>
+        </section>
+        <!-- Registration/Login Form Section -->
+        <section id="register" class="form-container">
+            <h1>Register/Login</h1>
+            <form id="registration-form">
+                <label>username:
+                <input type="text">allidivyasri123@gmail.com</input>
+                </label>
+                <label>password:
+                <input type="password">divyasri3112</input>
+                </label>
+                <label>confirm password:
+                <input type="confirm password">divyasri3112</input>
+                </label>
+                <button type="submit">Register</button
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy;2024 footwear catelog</p>
+    </footer>
+
+    <script>
+        // Client-side validation
+         if(username==="user"&&password==="pass"){
+         alert("login successfull!");}
+         else{
+         alert("invalid username or password");}
+        });
+    </script>
+</body>
+</html>
